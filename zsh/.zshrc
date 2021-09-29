@@ -11,6 +11,7 @@ alias cls='clear'
 alias python='python3'
 alias pip='pip3'
 alias config='vim $HOME/.zshrc'
+alias vconfig='vim $HOME/.vimrc'
 alias projects='cd $HOME/Documents/code'
 alias reload='source $HOME/.zshrc'
 
