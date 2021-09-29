@@ -16,6 +16,8 @@ alias reload='source $HOME/.zshrc'
 # Git aliases
 alias gs='git status'
 alias gc='git add . && git commit'
+alias gp='git pull'
+alias gd='git diff'
 
 # Setup new computer or terminal.
 terminal_setup () {
