@@ -7,6 +7,7 @@ export GPG_TTY=$(tty)
 
 alias ls='ls -G'	# Colorize list command
 alias ll='ls -lG'	# Colorize list command
+alias cls='clear'
 alias python='python3'
 alias pip='pip3'
 alias config='vim $HOME/.zshrc'
