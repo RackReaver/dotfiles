@@ -57,10 +57,6 @@ dockerclean () {
     docker rmi -f $(docker images -qf dangling=true)
 }                   
 
-start_python_project () {
-    # TBA
-}
-
 # Setup for copying dotfiles for github.
 copy_dotfiles () {
     cp $HOME/.zshrc ${1:?"The destination must be specified."}/zsh
