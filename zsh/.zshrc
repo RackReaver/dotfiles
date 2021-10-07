@@ -17,7 +17,7 @@ alias reload='source $HOME/.zshrc'
 
 # Git aliases
 alias gs='git status'
-alias gc='git add . && git commit'
+alias gc='git commit -a'
 alias gp='git pull'
 alias gd='git diff'
 
