@@ -21,6 +21,8 @@ alias gc='git commit -a'
 alias gp='git pull'
 alias gd='git diff'
 
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
 # Setup new computer or terminal.
 terminal_setup () {
 
