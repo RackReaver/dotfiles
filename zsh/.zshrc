@@ -1,6 +1,10 @@
 # <username> at <hostname> in <current_directory>
 PROMPT="%B%F{208}%n%f%b at %B%F{11}%m%f%b in %B%F{34}%~%f%b$ "
 
+HISTFILE=$HOME/.zsh_history
+HISTSIZE=100000
+SAVEHIST=$HISTSIZ
+
 export GPG_TTY=$(tty)
 export PATH=$(brew --prefix openssh)/bin:$PATH
 
