@@ -2,6 +2,10 @@
 PROMPT="%B%F{208}%n%f%b at %B%F{11}%m%f%b in %B%F{34}%~%f%b$ "
 
 export GPG_TTY=$(tty)
+export PATH=$(brew --prefix openssh)/bin:$PATH
+
+# Fix for using YubiKey as two factor for ssh
+eval `ssh-agent -s`
 
 # Aliases
 
@@ -28,8 +32,7 @@ terminal_setup () {
 
     # Install and setup brew
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    brew install git
-    brew install gpg-suite
+    brew install git gpg-suite
 
     # Install .vimrc
     curl https://raw.githubusercontent.com/RackReaver/dotfiles/main/vim/.vimrc > ~/.vimrc
