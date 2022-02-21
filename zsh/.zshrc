@@ -49,8 +49,7 @@ terminal_setup () {
     git config --global user.name "Matt Ferreira"
     git config --global user.email "rackreaver@gmail.com"
     git config --global commit.gpgsign true
-
-
+    git config --global gpg.program gpg
 }
 
 # Remove all python temp files
