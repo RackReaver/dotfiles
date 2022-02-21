@@ -23,6 +23,10 @@ alias vconfig='vim $HOME/.vimrc'
 alias pro='cd $HOME/Documents/code'
 alias reload='source $HOME/.zshrc'
 
+# Python development aliases
+alias cov='coverage run -m pytest'
+alias covr='coverage report -m'
+
 # Git aliases
 alias gs='git status'
 alias gc='git commit -a'
