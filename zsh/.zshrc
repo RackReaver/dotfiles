@@ -6,6 +6,9 @@ HISTSIZE=100000
 SAVEHIST=$HISTSIZ
 
 export GPG_TTY=$(tty)
+
+# Override existing openssh by adding the brew version to beginning of PATH
+# Allows YubiKey to be used as second authentication for ssh keys
 export PATH=$(brew --prefix openssh)/bin:$PATH
 
 # Fix for using YubiKey as two factor for ssh
@@ -22,10 +25,6 @@ alias config='vim $HOME/.zshrc'
 alias vconfig='vim $HOME/.vimrc'
 alias pro='cd $HOME/Documents/code'
 alias reload='source $HOME/.zshrc'
-
-# Python development aliases
-alias cov='coverage run -m pytest'
-alias covr='coverage report -m'
 
 # Git aliases
 alias gs='git status'
